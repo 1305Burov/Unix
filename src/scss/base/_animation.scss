@@ -1,0 +1,16 @@
+@keyframes circleOut {
+    to {
+        transform: scale(2);
+        background: #fff;
+        opacity: 0;
+    }
+}
+
+.click-animation {
+    position: absolute;
+    background: $main_color;
+    border-radius: 100%;
+    transform: scale(0);
+    animation-duration: .8s;
+    animation-name: circleOut;
+}

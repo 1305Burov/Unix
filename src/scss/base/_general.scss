@@ -26,11 +26,12 @@ body {
         border-radius: 10px;
         font-size: 14px;
         color: $bg_color;
+        z-index: 1;
+        transition: background-color .5s ease;
+        position: relative;
+        overflow: hidden;
         &:hover {
             background-color: $hover_color;
-        }
-        &:active {
-            background: $main_color;
         }
     }
 }
