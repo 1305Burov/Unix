@@ -1,0 +1,19 @@
+body {
+    font-family: Montserrat, sans-serif;
+    background: $bg_color;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    background-color: transparent;
+    border: 0;
+    color: $text_color;
+}

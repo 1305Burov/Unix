@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 44px;
+    &__button {
+        text-transform: uppercase;
+    }
+    &__dropdown {
+        user-select: none;
+        margin-left: 20px;
+        color: $text_color;
+        cursor: pointer;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 24px;
+            height: 18px;
+            background: url('/img/icons/arrow.svg') center no-repeat;
+            transition: all .5s ease;
+        }
+        &_open {
+            &::after {
+                transform: rotate(90deg);
+            }
+        }
+    }
+    &__button {
+        margin-right: 20px;
+        cursor: pointer;
+        transition: color .5s ease;
+        &:hover {
+            color: $main_color;
+        }
+        &:first-child{
+            position: relative;
+            &::after{
+                content: '';
+                width: 1px;
+                height: 24px;
+                background-color: $text_color;
+                position: absolute;
+                top: 50%;
+                right: -10px;
+                transform: translate(0,-50%);
+            }
+        }
+    }
+}
