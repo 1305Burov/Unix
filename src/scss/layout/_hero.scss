@@ -1,0 +1,47 @@
+.hero {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    padding: 140px 0 120px 0;
+    background-image: url('/img/blur.png');
+    background-position: 580px 40px;
+    background-size: 52%;
+    background-repeat: no-repeat;
+    &__h1 {
+        display: flex;
+        justify-content: space-between;
+        width: 325px;
+        height: 240px;
+        align-items: center;
+        font-size: 52px;
+        color: $second_text_color;
+        text-transform: uppercase;
+        line-height: 1.4;
+        position: relative;
+        &::before {
+            content: '%';
+            position: absolute;
+            top: 85%;
+            left: 65%;
+            transform: translate(-50%,-50%);
+            font-size: 200px;
+            color: $main_color;
+            z-index: 1;
+        }
+    }
+    &__span {
+        margin-right: 40px;
+        position: relative;
+        font-size: 420px;
+        color: linear-gradient();
+        background: -webkit-linear-gradient(280deg, #4FFFCA -48.89%, #1E3A37 80.56%, #191A1A 121.84%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__img {
+        position: absolute;
+        top: -8px;
+        right: -150px;
+        z-index: 0;
+    }
+}

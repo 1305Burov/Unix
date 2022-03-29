@@ -1,6 +1,7 @@
 body {
     font-family: Montserrat, sans-serif;
     background: $bg_color;
+    user-select: none;
 }
 .container {
     max-width: 1140px;
@@ -15,5 +16,21 @@ body {
 .button {
     background-color: transparent;
     border: 0;
-    color: $text_color;
+    cursor: pointer;
+    text-transform: uppercase;
+    &-cta {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        padding: 13px 60px 14px 60px;
+        background-color: $main_color;
+        border-radius: 10px;
+        font-size: 14px;
+        color: $bg_color;
+        &:hover {
+            background-color: $hover_color;
+        }
+        &:active {
+            background: $main_color;
+        }
+    }
 }

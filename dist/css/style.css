@@ -205,6 +205,8 @@ template {
 body {
   font-family: Montserrat,sans-serif;
   background: #0e1314;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .container {
@@ -220,7 +222,26 @@ body {
 .button {
   background-color: transparent;
   border: 0;
-  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.button-cta {
+  font-family: "Montserrat";
+  font-weight: 700;
+  padding: 13px 60px 14px 60px;
+  background-color: #4fffca;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #0e1314;
+}
+
+.button-cta:hover {
+  background-color: #00d2bc;
+}
+
+.button-cta:active {
+  background: #4fffca;
 }
 
 .header {
@@ -229,14 +250,10 @@ body {
   margin-top: 44px;
 }
 
-.header__button {
-  text-transform: uppercase;
-}
-
 .header__dropdown {
   -webkit-user-select: none;
   user-select: none;
-  margin-left: 20px;
+  margin: 0 20px;
   color: #fff;
   cursor: pointer;
 }
@@ -256,7 +273,7 @@ body {
 
 .header__button {
   margin-right: 20px;
-  cursor: pointer;
+  color: #fff;
   transition: color .5s ease;
 }
 
@@ -278,3 +295,59 @@ body {
   right: -10px;
   transform: translate(0, -50%);
 }
+
+.no-webp .hero {
+  background-image: url("/img/blur.png"); }
+
+.hero {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  padding: 140px 0 120px 0;
+  background-position: 580px 40px;
+  background-size: 52%;
+  background-repeat: no-repeat;
+}
+
+.hero__h1 {
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+  height: 240px;
+  align-items: center;
+  font-size: 52px;
+  color: #ebe7e5;
+  text-transform: uppercase;
+  line-height: 1.4;
+  position: relative;
+}
+
+.hero__h1::before {
+  content: "%";
+  position: absolute;
+  top: 85%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  font-size: 200px;
+  color: #4fffca;
+  z-index: 1;
+}
+
+.hero__span {
+  margin-right: 40px;
+  position: relative;
+  font-size: 420px;
+  color: linear-gradient();
+  background: -webkit-linear-gradient(280deg, #4FFFCA -48.89%, #1E3A37 80.56%, #191A1A 121.84%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__img {
+  position: absolute;
+  top: -8px;
+  right: -150px;
+  z-index: 0;
+}
+
+.webp .hero { background-image: url(/img/blur.webp); }

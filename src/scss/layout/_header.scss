@@ -2,12 +2,9 @@
     display: flex;
     justify-content: space-between;
     margin-top: 44px;
-    &__button {
-        text-transform: uppercase;
-    }
     &__dropdown {
         user-select: none;
-        margin-left: 20px;
+        margin: 0 20px;
         color: $text_color;
         cursor: pointer;
         &::after {
@@ -26,7 +23,7 @@
     }
     &__button {
         margin-right: 20px;
-        cursor: pointer;
+        color: $text_color;
         transition: color .5s ease;
         &:hover {
             color: $main_color;
