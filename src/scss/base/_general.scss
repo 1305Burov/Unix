@@ -8,6 +8,11 @@ body {
     margin: auto;
 }
 
+.text {
+    font-size: 26px;
+    font-weight: 400;
+}
+
 .buttons {
     display: flex;
     align-items: center;
@@ -35,3 +40,4 @@ body {
         }
     }
 }
+

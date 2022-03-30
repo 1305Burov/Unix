@@ -214,6 +214,11 @@ body {
   margin: auto;
 }
 
+.text {
+  font-size: 26px;
+  font-weight: 400;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -259,6 +264,31 @@ body {
   transform: scale(0);
   animation-duration: .8s;
   animation-name: circleOut;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0;
+  background-color: #0e1314;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4fffca;
+  border-radius: 9em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00d2bc;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: linear-gradient(120deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),linear-gradient(240deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),linear-gradient(0deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background: linear-gradient(300deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),linear-gradient(60deg, #02141a 40%, rgba(0, 0, 0, 0) 41%),linear-gradient(180deg, #02141a 30%, rgba(0, 0, 0, 0) 31%);
+  background-color: #fff;
 }
 
 .header {
@@ -365,6 +395,29 @@ body {
   top: -8px;
   right: -150px;
   z-index: 0;
+}
+
+.trading {
+  display: flex;
+  background-color: #162027;
+  margin: 140px 0 120px 0;
+  position: relative;
+  z-index: 5;
+}
+
+.trading__text {
+  max-width: 860px;
+  margin-bottom: 64px;
+  text-align: center;
+  line-height: 115%;
+  color: #fff;
+}
+
+.trading__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .webp .hero { background-image: url(/img/blur.webp); }
