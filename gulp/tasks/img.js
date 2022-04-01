@@ -12,39 +12,50 @@ export const img = () => {
         ))
         .pipe(app.plugins.newer(app.path.build.img))
         .pipe(
-            app.plugins.if(
-                app.isBuild,
-                webp()
-            )
+            // app.plugins.if(
+            //     app.isBuild,
+            //     webp()
+            // )
+            webp()
         )
         .pipe(
-            app.plugins.if(
-                app.isBuild,
-                app.gulp.dest(app.path.build.img)
-            )
+            // app.plugins.if(
+            //     app.isBuild,
+            //     app.gulp.dest(app.path.build.img)
+            // )
+            app.gulp.dest(app.path.build.img)
+
         )
         .pipe(
-            app.plugins.if(
-                app.isBuild,
-                app.gulp.src(app.path.src.img)
-            )
+            // app.plugins.if(
+            //     app.isBuild,
+            //     app.gulp.src(app.path.src.img)
+            // )
+            app.gulp.src(app.path.src.img)
         )
         .pipe(
-            app.plugins.if(
-                app.isBuild,
-                app.plugins.newer(app.path.build.img)
-            )
+            // app.plugins.if(
+            //     app.isBuild,
+            //     app.plugins.newer(app.path.build.img)
+            // )
+            app.plugins.newer(app.path.build.img)
         )
         .pipe(
-            app.plugins.if(
-                app.isBuild,
-                imagemin({
-                    progressive: true,
-                    svgoPlugins: [{ removeViewBox: false }],
-                    interlaced: true,
-                    optimizationLevel: 3 // from 0 to hero I mean 7
-                })
-            )
+            // app.plugins.if(
+            //     app.isBuild,
+            //     imagemin({
+            //         progressive: true,
+            //         svgoPlugins: [{ removeViewBox: false }],
+            //         interlaced: true,
+            //         optimizationLevel: 3 // from 0 to hero I mean 7
+            //     })
+            // )
+            imagemin({
+                progressive: true,
+                svgoPlugins: [{ removeViewBox: false }],
+                interlaced: true,
+                optimizationLevel: 3 // from 0 to hero I mean 7
+            })
         )
         .pipe(app.gulp.dest(app.path.build.img))
         .pipe(app.gulp.src(app.path.src.svg))

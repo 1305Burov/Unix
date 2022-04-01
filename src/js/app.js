@@ -29,3 +29,4 @@ function animateClick(e) {
             animationCircle.remove();
         }, 500);
 }
+
