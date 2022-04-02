@@ -1,0 +1,21 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('/img/banner_bg.webp') center / contain no-repeat;
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 40px 0 -40px;
+        font-size: 64px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $second_text_color;
+        &_span {
+            font-size: 180px;
+            color: $main_color;
+        }
+    }
+
+}

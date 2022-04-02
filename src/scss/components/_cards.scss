@@ -13,7 +13,23 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
+        padding-top: 85px;
         margin: 32px;
+        &:nth-child(1) {
+            background: url('/img/icons/spot.svg') top left  no-repeat;
+        }
+        &:nth-child(2) {
+            background: url('/img/icons/easyEx.svg') top left  no-repeat;
+        }
+        &:nth-child(3) {
+            background: url('/img/icons/wallet.svg') top left  no-repeat;
+        }
+        &:nth-child(4) {
+            background: url('/img/icons/exchange.svg') top left  no-repeat;
+        }
+        &:nth-child(5) {
+            background: url('/img/icons/partners.svg') top left  no-repeat;
+        }
     }
     &__list {
         color: $text_color;
@@ -21,8 +37,5 @@
         line-height: 1.5;
         text-align: left;
         padding: 0;
-        &__item {
-            
-        }
     }
 }

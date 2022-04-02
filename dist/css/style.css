@@ -231,6 +231,7 @@ body {
 .text {
   font-size: 26px;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 .buttons {
@@ -323,7 +324,28 @@ body {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-top: 85px;
   margin: 32px;
+}
+
+.cards__item:nth-child(1) {
+  background: url("/img/icons/spot.svg") top left no-repeat;
+}
+
+.cards__item:nth-child(2) {
+  background: url("/img/icons/easyEx.svg") top left no-repeat;
+}
+
+.cards__item:nth-child(3) {
+  background: url("/img/icons/wallet.svg") top left no-repeat;
+}
+
+.cards__item:nth-child(4) {
+  background: url("/img/icons/exchange.svg") top left no-repeat;
+}
+
+.cards__item:nth-child(5) {
+  background: url("/img/icons/partners.svg") top left no-repeat;
 }
 
 .cards__list {
@@ -521,6 +543,49 @@ body {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+
+.buy {
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #4fffca;
+  padding: 45px 0 0 0;
+  margin-bottom: 120px;
+}
+
+.buy__title {
+  max-width: 655px;
+  margin: auto;
+  font-size: 43px;
+  font-weight: 700;
+}
+
+.buy__span {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/banner_bg.webp") center/contain no-repeat;
+}
+
+.banner__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 40px 0 -40px;
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ebe7e5;
+}
+
+.banner__text_span {
+  font-size: 180px;
+  color: #4fffca;
 }
 
 .webp .hero { background-image: url(/img/blur.webp); }

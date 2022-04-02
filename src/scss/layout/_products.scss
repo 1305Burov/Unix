@@ -49,3 +49,21 @@
         }
     }
 }
+
+.buy {
+    text-align: center;
+    color: $text_color;
+    border-top: 1px solid $main_color;
+    padding: 45px 0 0 0;
+    margin-bottom: 120px;
+    &__title {
+        max-width: 655px;
+        margin: auto;
+        font-size: 43px;
+        font-weight: 700;
+    }
+    &__span {
+        font-size: 26px;
+        font-weight: 700;
+    }
+}
