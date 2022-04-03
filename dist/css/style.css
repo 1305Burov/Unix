@@ -1,3 +1,5 @@
+@import "/node_modules/swiper/swiper-bundle.min.css";
+
 @font-face {
   font-family: Montserrat;
   font-display: swap;
@@ -219,19 +221,22 @@ body {
   font-weight: 700;
   font-size: 180px;
   background: radial-gradient(206.43% 206.43% at 50% -20.36%, #141E1E 0%, #0F1415 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   mix-blend-mode: screen;
   text-transform: uppercase;
   text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .text {
   font-size: 26px;
   font-weight: 400;
   line-height: 1.4;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .buttons {
@@ -243,10 +248,10 @@ body {
   background-color: transparent;
   border: 0;
   cursor: pointer;
-  text-transform: uppercase;
 }
 
 .button-cta {
+  text-transform: uppercase;
   font-family: "Montserrat";
   font-weight: 700;
   padding: 13px 60px 14px 60px;
@@ -356,6 +361,30 @@ body {
   padding: 0;
 }
 
+.swiper {
+  margin: 0 0 80px 0;
+  position: relative;
+}
+
+.swiper::after {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0E1314 5%, transparent 50%, #0E1314 95%);
+}
+
+.swiper-slide {
+  text-align: center;
+}
+
+.swiper-container {
+  display: flex;
+  align-items: center;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -385,6 +414,7 @@ body {
 
 .header__button {
   margin-right: 20px;
+  text-transform: uppercase;
   color: #fff;
   transition: color .5s ease;
 }
@@ -408,7 +438,7 @@ body {
   transform: translate(0, -50%);
 }
 
-.no-webp .hero {
+.no-webp .hero{
   background-image: url("/img/blur.png"); }
 
 .hero {
@@ -496,7 +526,7 @@ body {
   position: relative;
 }
 
-.no-webp .about::after {
+.no-webp .about::after{
   background: url("/img/noise.png") center/cover no-repeat; }
 
 .about::after {
@@ -551,6 +581,7 @@ body {
   border-top: 1px solid #4fffca;
   padding: 45px 0 0 0;
   margin-bottom: 120px;
+  font-size: 26px;
 }
 
 .buy__title {
@@ -560,16 +591,11 @@ body {
   font-weight: 700;
 }
 
-.buy__span {
-  font-size: 26px;
-  font-weight: 700;
-}
-
 .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/img/banner_bg.webp") center/contain no-repeat;
+  background: url("/img/banner_bg.webp") center/cover no-repeat;
 }
 
 .banner__text {
@@ -588,13 +614,124 @@ body {
   color: #4fffca;
 }
 
-.banner__img {
-  max-width: 355px;
-  max-height: 185px;
-  width: 100%;
-  height: 100%;
+.stock {
+  position: relative;
+  padding: 50px 0;
+  background-color: #162027;
+  text-transform: uppercase;
 }
 
-.webp .hero { background-image: url(/img/blur.webp); }
+.stock::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url("/img/stock_bg.webp") left/contain no-repeat;
+}
 
-.webp .about::after { background: url(/img/noise.webp) center/cover no-repeat; }
+.stock__title {
+  margin-top: 0;
+  max-width: 600px;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #4fffca;
+}
+
+.stock__list {
+  position: relative;
+  font-size: 22px;
+  color: #fff;
+}
+
+.stock__list::after {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  z-index: 0;
+  width: 800px;
+  height: 800px;
+  content: "";
+  transform: translate(0, -50%);
+  background: url("/img/blur.webp") left/contain no-repeat;
+}
+
+.stock__list__item {
+  max-width: 460px;
+  margin-bottom: 12px;
+}
+
+.stock__list__item:last-child {
+  margin-bottom: 40px;
+}
+
+.adv {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 140px 0 120px;
+  text-align: right;
+  color: #fff;
+}
+
+.adv::before {
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  z-index: -1;
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  content: "";
+  transform: translate(0, -50%);
+  background: url("/img/blur.webp") left/contain no-repeat;
+}
+
+.adv__content {
+  position: relative;
+}
+
+.adv__content .text {
+  margin: 28px 0 32px;
+  font-size: 20px;
+  max-width: 620px;
+}
+
+.adv__content::after {
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  content: "";
+  width: 920px;
+  height: 1px;
+  background-color: #4fffca;
+}
+
+.adv__title {
+  margin: 60 0 0 0;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.adv__button {
+  padding: 8px 50px 7px 80px;
+  border: 1px solid #fff;
+  background: url("/img/icons/apple.webp") 15% 45% no-repeat;
+  font-size: 12px;
+  text-align: left;
+  color: #fff;
+  cursor: pointer;
+}
+
+.adv__button_text {
+  font-size: 24px;
+}
+
+.webp .hero{ background-image: url(/img/blur.webp); }
+
+.webp .about::after{ background: url(/img/noise.webp) center/cover no-repeat; }

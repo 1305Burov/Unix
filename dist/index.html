@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/icons/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220403180448">
     <title>Unistex</title>
 </head>
-    <body>
-                <header class="container header">
+
+<body>
+            <header class="container header">
             <a href="/" class="logo"><img src="img/logo.svg" alt="Unistex Logo"></a>
             <div class="buttons">
                 <button class="button header__button" id="button-auth">Вход</button>
@@ -19,19 +20,18 @@
                 <div class="header__dropdown">RU</div> 
             </div>
         </header>
-        <main class="main">
-                    
+    <main class="main">
+                
     <section class="container hero">
         <h1 class="hero__h1">
-            <span class="hero__span">0</span>
-            на ввод средств 
+            <span class="hero__span">0</span> на ввод средств 
         </h1>
         <button class="button button-cta">начать</button>
         <img src="img/mainRocket.webp" alt="Rocket" class="hero__img">
     </section>
-        
-            <section class="trading">
-    <img src="img/flag.png" alt="Estonian flag" class="trading__img">
+         
+        <section class="trading">
+    <picture><source srcset="img/flag.webp" type="image/webp"><img src="img/flag.png" alt="Estonian flag" class="trading__img"></picture>
     <div class="trading__item">
         <p class="text trading__text">
             Эстонский отдел финансовой разведки <br>
@@ -39,8 +39,8 @@
         </p>
         <button class="button button-cta">начать торговлю</button>
     </div>
-</section>
-            <section class="container products">
+</section> 
+        <section class="container products">
     <h2 class="section-title">
         products
     </h2>
@@ -101,52 +101,75 @@
     <div class="buy">
         <div class="buy__title">Покупай и продавай Bitcoin на криптобирже UNI Stex</div>
         <p class="text">
-            <span class="buy__span">UNI Stex</span> - удобная торговая площадка с простыми и понятными торговыми инструментами,
+            <span class="bold">UNI Stex</span> - удобная торговая площадка с простыми и понятными торговыми инструментами,
             при помощи которых можно легко торговать и обменивать криптовалюту,
             а также конвертировать ее в фиаты. <br>
-            <span class="buy__span">Основным партнером по Молдавии является компания BPay</span>
+            <span class="bold">Основным партнером по Молдавии является компания BPay</span>
         </p>
         <button class="button button-cta">зарегистрироваться</button>
     </div>
 </section>
 
-
-            <article class="banner">
-    <img class="banner__img" src="img/banner_rocket.png" alt="Rocket">
+ 
+        <article class="banner">
+    <picture><source srcset="img/banner_rocket.webp" type="image/webp"><img class="banner__img" src="img/banner_rocket.png" alt="Rocket"></picture>
     <p class="banner__text">
         <span class="banner__text_span">0%</span>
         на ввод <br> средств 
     </p>
     <button class="button button-cta">Купить Bitcoin</button>
-</article>
-            <section class="partners">
+</article> 
+        <section class="partners">
     <h2 class="section-title">
-       partners
+        partners
     </h2>
     <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="img/flag.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/flag.png" alt=""></div>
-          <div class="swiper-slide"><img src="img/flag.png" alt=""></div>
-          ...
+        <div class="swiper-wrapper swiper-container">
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/b2_logo.webp" type="image/webp"><img src="img/partners_icons/b2_logo.png" alt="B2BX logo"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/pm_logo.webp" type="image/webp"><img src="img/partners_icons/pm_logo.png" alt="Perfect Money logo"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/mc_logo.webp" type="image/webp"><img src="img/partners_icons/mc_logo.png" alt="MasterCard  logo"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/visa_logo.webp" type="image/webp"><img src="img/partners_icons/visa_logo.png" alt="Visa logo"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/sum_logo.webp" type="image/webp"><img src="img/partners_icons/sum_logo.png" alt="Sum&substance logo"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/sectigo_logo.webp" type="image/webp"><img src="img/partners_icons/sectigo_logo.png" alt="Sectigo logo"></picture></div>
+            <div class="swiper-slide"><picture><source srcset="img/partners_icons/psp_logo.webp" type="image/webp"><img src="img/partners_icons/psp_logo.png" alt="PSP logo"></picture></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
+    </div>
 </section>
-        </main>
-        <footer></footer>
-        <script src="js/app.min.js"></script>
-    </body>
+        <section class="stock">
+    <div class="container">
+        <h2 class="stock__title">
+            <span class="bold">Регулируемая</span>  криптовалютная  <span class="bold">биржа</span>
+        </h2>
+        <ul class="stock__list">
+            <li class="stock__list__item">УдобныЙ <span class="bold">интерфейс</span> </li>
+            <li class="stock__list__item"><span class="bold">0% на ввод</span> средств</li>
+            <li class="stock__list__item">Многоуровневая <span class="bold">реферальная программа</span></li>
+            <li class="stock__list__item"> <span class="bold">Быстрый обменник</span> без регистрации</li>
+            <li class="stock__list__item bold">Поддержка 24/7</li>
+        </ul>
+        <button class="button button-cta">начать торгов</button>
+    </div>
+</section>
+        <section class="container adv">
+    <picture><source srcset="img/phone.webp" type="image/webp"><img src="img/phone.png" alt="advertisment phone"></picture>
+    <div class="adv__content">
+        <h2 class="adv__title">
+            Торгуй везде с <br>  UNI Stex
+        </h2>
+        <p class="text">
+            Все сервисы UNI Stex всегда с вами в нашем приложении.
+            Быть всегда на волне тренда – это выбор тех, кто торгует и получает прибыль.
+        </p>
+            <p class="text">Скачайте наше приложение и не упускайте прибыльных движений рынка.</p>
+        <button class="button adv__button"> Download on the <br> <span class="adv__button_text">App Store</span> </button>
+    </div>
+</section>
+    </main>
+    <footer></footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20220403180448"></script>
+    <script src="js/app.min.js?_v=20220403180448"></script>
+</body>
+
 </html>
 
 <!-- /img/imgName add image src  -->

@@ -1,0 +1,56 @@
+.adv {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 140px 0 120px;
+    text-align: right;
+    color: $text_color;
+    &::before {
+        position: absolute;
+        top: 50%;
+        left: -20%;
+        z-index: -1;
+        max-width: 800px;
+        width: 100%;
+        height: 100%;
+        content: '';
+        transform: translate(0, -50%);
+        background: url('/img/blur.webp') left / contain  no-repeat;
+    }
+    &__content {
+        position: relative;
+        & .text {
+            margin: 28px 0 32px;
+            font-size: 20px;
+            max-width: 620px;
+        }
+        &::after {
+            position: absolute;
+            right: 0;
+            bottom: -40px;
+            content: '';
+            width: 920px;
+            height: 1px;
+            background-color: $main_color;
+        }
+    }
+    &__title {
+        margin: 60 0 0 0;
+        font-size: 48px;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        padding: 8px 50px 7px 80px;
+        border: 1px solid $text_color;
+        background: url('/img/icons/apple.webp') 15% 45%  no-repeat;
+        font-size: 12px;
+        text-align: left;
+        color: $text_color;
+        cursor: pointer;
+        &_text {
+            font-size: 24px;
+        }
+    }
+}

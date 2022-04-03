@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('/img/banner_bg.webp') center / contain no-repeat;
+    background: url('/img/banner_bg.webp') center / cover no-repeat;
     &__text {
         display: flex;
         align-items: center;
@@ -17,11 +17,4 @@
             color: $main_color;
         }
     }
-    &__img {
-        max-width: 355px;
-        max-height: 185px;
-        width: 100%;
-        height: 100%;
-    }
-
 }

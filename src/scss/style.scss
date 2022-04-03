@@ -1,13 +1,17 @@
 @import "fonts.scss";
 @import "base/normolize.scss";
+// @import "/node_modules/swiper/swiper.min.css"; // swiper styles
+@import "/node_modules/swiper/swiper-bundle.min.css"; // swiper styles
 @import "base/variables.scss";
 @import "base/general.scss";
 @import "base/animation.scss";
 @import "components/scrollbar.scss";
 @import "components/cards.scss";
+@import "components/slider.scss";
 @import "layout/header.scss";
 @import "layout/hero.scss";
 @import "layout/trading.scss";
 @import "layout/products.scss";
 @import "layout/banner.scss";
-
+@import "layout/stock.scss";
+@import "layout/adv.scss";

@@ -23,6 +23,7 @@
     }
     &__button {
         margin-right: 20px;
+        text-transform: uppercase;
         color: $text_color;
         transition: color .5s ease;
         &:hover {
