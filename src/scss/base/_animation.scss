@@ -6,6 +6,43 @@
     }
 }
 
+@keyframes fly {
+    from {
+        opacity: 0;
+        transform: translate(-100px, 100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(20px, 0px);
+    }
+}
+
+@keyframes openModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes closeModal {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+.animate {
+    border-radius: 40%;
+    transform: translate(20px, 0px);
+    animation-duration: 1s;
+    animation-name: fly;
+}
+
 .click-animation {
     position: absolute;
     background: $main_color;

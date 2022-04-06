@@ -1,0 +1,35 @@
+.footer {
+    padding: 20px 0 100px;
+    color: $text_color;
+    & .company-info {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 40px;
+        &__li {
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+
+    & .social {
+
+        &__link {
+            opacity: .4;
+            transition: all .5s ease;
+            cursor: pointer;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    & .warning {
+        opacity: .6;
+        &__title {
+            font-size: 18px;
+        }
+        & .text {
+            font-size: 12px;
+        }
+    }
+}

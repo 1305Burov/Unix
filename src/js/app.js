@@ -1,6 +1,11 @@
 import * as flsFunc from './moduls/func.js';
+import accordion from './moduls/accordion.js';
+import modal from './moduls/modal.js';
 
 flsFunc.isWebp();
+modal();
+accordion();
+
 
 // import Swiper, { Navigation, Pagination } from 'swiper';
 
@@ -14,6 +19,7 @@ new Swiper('.swiper', {
         delay: 2500,
     },
 });
+
 
 document.querySelector('.header__dropdown').addEventListener('click', () => {
     document.querySelector('.header__dropdown').classList.toggle('header__dropdown_open')

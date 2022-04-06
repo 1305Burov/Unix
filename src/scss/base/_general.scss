@@ -59,3 +59,25 @@ body {
         }
     }
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background: $bg_color;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.user-name{
+    color: $text_color;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+

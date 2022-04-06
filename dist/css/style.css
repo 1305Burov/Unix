@@ -269,12 +269,72 @@ body {
   background-color: #00d2bc;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  background: #0e1314;
+  opacity: .5;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.user-name {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
 @keyframes circleOut {
   to {
     transform: scale(2);
     background: #fff;
     opacity: 0;
   }
+}
+
+@keyframes fly {
+  from {
+    opacity: 0;
+    transform: translate(-100px, 100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(20px, 0px);
+  }
+}
+
+@keyframes openModal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes closeModal {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animate {
+  border-radius: 40%;
+  transform: translate(20px, 0px);
+  animation-duration: 1s;
+  animation-name: fly;
 }
 
 .click-animation {
@@ -385,6 +445,100 @@ body {
   align-items: center;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  z-index: 1000;
+  max-width: 620px;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #162027;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  opacity: 1;
+  animation-duration: .5s;
+  animation-name: openModal;
+  background: url("/img/blur.webp") center center no-repeat,#0e1314;
+}
+
+.modal__title {
+  font-size: 24px;
+  margin: 32px 0;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  max-width: 360px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  border: 1px solid #0e1314;
+  border-radius: 10px;
+  background: #162027;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  outline: none;
+}
+
+.modal__input:focus {
+  border: 1px solid #4fffca;
+}
+
+.modal__button {
+  max-width: 360px;
+  width: 100%;
+  margin: 12px 0 20px;
+}
+
+.modal .alt {
+  text-transform: uppercase;
+}
+
+.modal .alt .text {
+  font-size: 12px;
+}
+
+.modal .alt .button {
+  position: relative;
+  padding: 0;
+  margin-left: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #4fffca;
+}
+
+.modal .alt .button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #4fffca;
+}
+
+.modal .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.input-error {
+  border: 1px solid #fa3232;
+}
+
+.close__modal {
+  opacity: 0;
+  animation-duration: .5s;
+  animation-name: closeModal;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -392,10 +546,10 @@ body {
 }
 
 .header__dropdown {
-  -webkit-user-select: none;
-  user-select: none;
   margin: 0 20px;
   color: #fff;
+  -webkit-user-select: none;
+  user-select: none;
   cursor: pointer;
 }
 
@@ -730,6 +884,115 @@ body {
 
 .adv__button_text {
   font-size: 24px;
+}
+
+.programm {
+  padding: 140px 0 100px;
+  background: url("/img/space_bg.webp") center/cover no-repeat;
+  color: #fff;
+}
+
+.programm__title {
+  margin-top: 0;
+  font-size: 43px;
+}
+
+.programm .text {
+  max-width: 860px;
+  margin-bottom: 50px;
+}
+
+.faq {
+  padding: 120px 0 100px;
+  color: #ebe7e5;
+}
+
+.faq__title {
+  margin: 0 0 24px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 50px;
+}
+
+.faq__list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq__list__item {
+  position: relative;
+  border-bottom: 1px solid #ebe7e5;
+  cursor: pointer;
+}
+
+.faq__list__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 14px;
+  background: url("/img/faq.webp") center/cover no-repeat;
+  transition: all .5s ease;
+}
+
+.faq__list__content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  will-change: max-height;
+  transition: all .5s ease;
+}
+
+.faq .open {
+  opacity: 1;
+}
+
+.faq .item__title {
+  color: #4fffca;
+  font-size: 26px;
+}
+
+.faq .faq__item_close::after {
+  transform: scaleY(-1);
+}
+
+.footer {
+  padding: 20px 0 100px;
+  color: #fff;
+}
+
+.footer .company-info {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.footer .company-info__li {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.footer .social__link {
+  opacity: .4;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.footer .social__link:hover {
+  opacity: 1;
+}
+
+.footer .warning {
+  opacity: .6;
+}
+
+.footer .warning__title {
+  font-size: 18px;
+}
+
+.footer .warning .text {
+  font-size: 12px;
 }
 
 .webp .hero{ background-image: url(/img/blur.webp); }

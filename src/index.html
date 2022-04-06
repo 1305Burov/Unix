@@ -5,15 +5,18 @@
 <body>
     @@include('html/header.html', {})
     <main class="main">
-        @@include('html/hero.html', {}) 
+        @@include('html/hero.html', {"h1": "zero deposit fee"}) 
         @@include('html/trading.html', {}) 
         @@include('html/products.html', {}) 
         @@include('html/banner.html', {}) 
         @@include('html/partners.html', {})
         @@include('html/stock.html', {})
         @@include('html/adv.html', {})
+        @@include('html/programm.html', {})
+        @@include('html/faq.html', {})
     </main>
     @@include('html/footer.html', {})
+    @@include('html/modals.html', {})
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>

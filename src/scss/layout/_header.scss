@@ -3,9 +3,9 @@
     justify-content: space-between;
     margin-top: 44px;
     &__dropdown {
-        user-select: none;
         margin: 0 20px;
         color: $text_color;
+        user-select: none;
         cursor: pointer;
         &::after {
             position: absolute;
@@ -14,7 +14,7 @@
             height: 18px;
             background: url('/img/icons/arrow.svg') center no-repeat;
             transition: all .5s ease;
-        }
+        } 
         &_open {
             &::after {
                 transform: rotate(90deg);

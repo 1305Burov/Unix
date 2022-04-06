@@ -1,0 +1,36 @@
+<div class="overlay hidden"></div>
+
+<div class="modal hidden" id="thx">
+    <h2 class="modal__title">Спасибо за регистрацию</h2>
+    <img class="animate" src="@img/banner_rocket.png" alt="Rocket">
+</div>
+
+<div class="modal hidden" id="login">
+    <img class="close" src="@img/icons/close.png" alt="Close icon">
+    <h2 class="modal__title">Вход</h2>
+    <form action="#">
+        <input type="mail" placeholder="Введите e-mail" class="modal__input" id="inputLogin">
+        <input type="password" placeholder="Введите пароль" class="modal__input" id="inputPass">
+        <button class="button button-cta modal__button" id="loginSubmit">Войти</button>
+    </form>
+    <div class="alt">
+        <span class="text"></span>    
+        <button class="button">регистрация</button>
+    </div>
+</div>
+<div class="modal hidden" id="reg">
+    <img class="close" src="@img/icons/close.png" alt="Close icon">
+    <h2 class="modal__title">регистрация</h2>
+    <form action="#">
+        <input type="text" placeholder="имя" class="modal__input">
+        <input type="mail" placeholder="e-mail" class="modal__input">
+        <input type="phone" placeholder="номер телефона" class="modal__input">
+        <input type="password" placeholder="пароль" class="modal__input">
+        <input type="password" placeholder="Повторите пароль" class="modal__input">
+        <button class="button button-cta modal__button" id="regSubmit">Зарегистрироваться</button>
+    </form>
+    <div class="alt">
+        <span class="text">уже есть аккаунт?</span>    
+        <button class="button">Войти</button>
+    </div>
+</div>

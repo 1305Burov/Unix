@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/img/icons/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220403180448">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20220406202018"
+  />
+    <link rel="stylesheet" href="css/style.min.css?_v=20220406202018">
     <title>Unistex</title>
 </head>
 
@@ -14,10 +18,13 @@
             <a href="/" class="logo"><img src="img/logo.svg" alt="Unistex Logo"></a>
             <div class="buttons">
                 <button class="button header__button" id="button-auth">Вход</button>
-                <button class="button header__button" id="button-out">Регистрация</button>
+                <button class="button header__button" id="button-reg">Регистрация</button>
+                <button class="button header__button hidden" id="button-out">выйти</button>
                 <span class="user-name"></span>
                 <!-- header__dropdown_open открытый список -->
-                <div class="header__dropdown">RU</div> 
+                <div class="header__dropdown">
+                   RU
+                </div> 
             </div>
         </header>
     <main class="main">
@@ -59,27 +66,27 @@
             <h3 class="cards__title">Простой
                  <br> обмен</h3>
             <ul class="cards__list">
-                <li class="cards__list__item">Быстрая покупка и продажа криптовалюты в один клик.<div>
+                <li class="cards__list__item">Быстрая покупка и продажа криптовалюты в один клик.</li>
                 <li class="cards__list__item">Быстрый и безопасный обмен в автоматическом режиме.</li>
             </ul>
         </div> 
         <div class="cards__item">
             <h3 class="cards__title">Криптовалютный <br> кошелек</h3>
             <ul class="cards__list">
-                <li class="cards__list__item">Все операции в одном криптовалютном кошельке.<div>
+                <li class="cards__list__item">Все операции в одном криптовалютном кошельке.</li>
                 <li class="cards__list__item">Создавай свой бесплатный кошелек, обменивай криптовалюты и фиат.</li>
             </ul>
         </div> 
         <div class="cards__item">
             <h3 class="cards__title">Некастодиальный <br> обменник</h3>
             <ul class="cards__list">
-                <li class="cards__list__item">Создан специально для анонимного обмена криптовалют и фиата.<div>
+                <li class="cards__list__item">Создан специально для анонимного обмена криптовалют и фиата.</li>
             </ul>
         </div> 
         <div class="cards__item">
             <h3 class="cards__title">Партнерская <br> программа</h3>
             <ul class="cards__list">
-                <li class="cards__list__item">Станьте партнером и получайте прибыль от приглашенных друзей.<div>
+                <li class="cards__list__item">Станьте партнером и получайте прибыль от приглашенных друзей.</li>
                 <li class="cards__list__item">До 60% от суммы комиссий.</li>
             </ul>
         </div> 
@@ -164,10 +171,117 @@
         <button class="button adv__button"> Download on the <br> <span class="adv__button_text">App Store</span> </button>
     </div>
 </section>
+        <section class="programm">
+    <div class="container">
+        <h2 class="programm__title">
+            Партнерская программа
+        </h2>
+        <p class="text">
+            С помощью сервиса UNI Stex Вы можете не только выгодно
+            обменивать электронную валюту, но и хорошо зарабатывать на этом (Партнерская программа) <br>
+            Выплату сможете получить любым удобным для Вас способом представленным в вашем личном кабинете UNI Stex.
+        </p>
+        <button class="button button-cta">Получить ссылку</button>
+    </div>
+</section>
+        <section class="container faq">
+    <h2 class="faq__title">FAQ</h2>
+    <ul class="faq__list">
+        <li class="faq__list__item">
+            <h3 class="item__title">2FA code error</h3>
+            <div class="faq__list__content">
+                <p class="text">
+                    If you see '2FA Code Error' when entering the Google authentication code, follow the instructions below to solve the problem:
+                </p>
+    
+                <p class="text">
+                    Synchronize the time (clock) on your mobile phone (the Google Authenticator app) and the computer (from which you are trying to log in).
+                </p>
+            </div>
+        </li>
+        <li class="faq__list__item">
+            <h3 class="item__title">How to register an account on the website UNI Stex</h3>
+            <div class="faq__list__content">
+                <p class="text">There are so many CTA buttons, are you kidding?</p>
+            </div>
+        </li>
+        <li class="faq__list__item">
+            <h3 class="item__title">How to change the password of your account (Personal Account)</h3>
+            <div class="faq__list__content">
+                <p class="text">Just change it if you really want to you will find the way</p>
+            </div>
+        </li>
+    </ul>
+</section>
     </main>
-    <footer></footer>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20220403180448"></script>
-    <script src="js/app.min.js?_v=20220403180448"></script>
+    <footer class="container footer">
+    <img src="img/logo.svg" alt="Unix Logo">
+    <ul class="company-info">
+        <h3 class="company-info__li">Trade with financial thinking</h3>
+        <li class="company-info__li">Unitechnology OU</li>
+        <li class="company-info__li">Registry Code – 14731902</li>
+        <li class="company-info__li">Licence Number – FVT000475</li>
+        <li class="company-info__li">Osmussaare tn 8, Lasnamäe Linnaosa</li>
+        <li class="company-info__li">Harju Maakond, 13811, Tallinn, Estonia</li>
+    </ul>
+
+    <div class="social">
+        <a href="#" class="social__link">
+            <picture><source srcset="img/icons/fb.webp" type="image/webp"><img src="img/icons/fb.png" alt="facebook"></picture>
+        </a>
+        <a href="#" class="social__link">
+            <picture><source srcset="img/icons/youtube.webp" type="image/webp"><img src="img/icons/youtube.png" alt="youtube"></picture>
+        </a>
+        <a href="#" class="social__link">
+            <picture><source srcset="img/icons/inst.webp" type="image/webp"><img src="img/icons/inst.png" alt="instagramm"></picture>
+        </a>
+    </div>
+
+    <div class="warning">
+        <h3 class="warning__title">Risk warning</h3>
+        <p class="text">
+            The financial products offered via this website include digitals, contracts for difference (CFDs), and other complex derivatives and financial products.    Trading options may not be suitable for everyone. Trading CFDs carries a high level of risk since leverage can work both to your advantage and disadvantage. As a result, the products offered on this website may not be suitable for all investors because of the risk of losing all of your invested capital. You should never invest money that you cannot afford to lose, and never trade with borrowed money. Before trading in the complex financial products offered, please be sure to understand the risks involved and learn about Secure and responsible trading.
+        </p>
+    </div>
+</footer>
+    <div class="overlay hidden"></div>
+
+<div class="modal hidden" id="thx">
+    <h2 class="modal__title">Спасибо за регистрацию</h2>
+    <picture><source srcset="img/banner_rocket.webp" type="image/webp"><img class="animate" src="img/banner_rocket.png" alt="Rocket"></picture>
+</div>
+
+<div class="modal hidden" id="login">
+    <picture><source srcset="img/icons/close.webp" type="image/webp"><img class="close" src="img/icons/close.png" alt="Close icon"></picture>
+    <h2 class="modal__title">Вход</h2>
+    <form action="#">
+        <input type="mail" placeholder="Введите e-mail" class="modal__input" id="inputLogin">
+        <input type="password" placeholder="Введите пароль" class="modal__input" id="inputPass">
+        <button class="button button-cta modal__button" id="loginSubmit">Войти</button>
+    </form>
+    <div class="alt">
+        <span class="text"></span>    
+        <button class="button">регистрация</button>
+    </div>
+</div>
+<div class="modal hidden" id="reg">
+    <picture><source srcset="img/icons/close.webp" type="image/webp"><img class="close" src="img/icons/close.png" alt="Close icon"></picture>
+    <h2 class="modal__title">регистрация</h2>
+    <form action="#">
+        <input type="text" placeholder="имя" class="modal__input">
+        <input type="mail" placeholder="e-mail" class="modal__input">
+        <input type="phone" placeholder="номер телефона" class="modal__input">
+        <input type="password" placeholder="пароль" class="modal__input">
+        <input type="password" placeholder="Повторите пароль" class="modal__input">
+        <button class="button button-cta modal__button" id="regSubmit">Зарегистрироваться</button>
+    </form>
+    <div class="alt">
+        <span class="text">уже есть аккаунт?</span>    
+        <button class="button">Войти</button>
+    </div>
+</div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js?_v=20220406202018"></script>
+    <script src="js/app.min.js?_v=20220406202018"></script>
 </body>
 
 </html>

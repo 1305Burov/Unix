@@ -1,0 +1,87 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 1000;
+    max-width:  620px;
+    width: 100%;   
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px $alt_bg_color;
+    text-align: center;
+    color: $text_color;
+    overflow: hidden;
+    opacity: 1;
+    animation-duration: .5s;
+    animation-name: openModal;
+    background: url('/img/blur.webp') center  center no-repeat , $bg_color;
+    &__title {
+        font-size: 24px;
+        margin: 32px 0;
+        text-transform: uppercase;
+    }
+    &__input {
+        max-width: 360px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 20px 0;
+        border: 1px solid $bg_color;
+        border-radius: 10px;
+        background: $alt_bg_color;
+        text-align: center;
+        text-transform: uppercase;
+        color: $text_color;
+        outline: none;
+        &:focus {
+            border: 1px solid $main_color;
+        }
+    }
+    &__button {
+        max-width: 360px;
+        width: 100%;
+        margin: 12px 0 20px;
+    }
+    & .alt {
+        text-transform: uppercase;
+        & .text {
+            font-size: 12px;
+        }
+        & .button {
+            position: relative;
+            padding: 0;
+            margin-left: 5px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: $main_color;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $main_color;
+            }
+        }
+    }
+
+    & .close {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        cursor: pointer;
+    }
+}
+
+.input-error {
+    border: 1px solid rgb(250, 50, 50);
+}
+
+
+.close__modal {
+    opacity: 0;
+    animation-duration: .5s;
+    animation-name: closeModal;
+}
+

@@ -1,0 +1,13 @@
+.programm {
+    padding: 140px 0 100px;
+    background: url('/img/space_bg.webp') center / cover no-repeat;
+    color: $text_color;
+    &__title {
+        margin-top: 0;
+        font-size: 43px;
+    }
+    & .text {
+        max-width: 860px;
+        margin-bottom: 50px;
+    }
+}
